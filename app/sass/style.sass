@@ -1,0 +1,366 @@
+@import "extends"
+@import "vars";
+@import "libs";
+@import "fonts";
+
+/* global property and boxes */
+
+*, *::before, *::after 
+                box-sizing: border-box
+
+body 
+                font-size: 16px
+                padding: 0
+                min-width: 320px
+                overflow-x: none
+                margin: 0 auto
+                font-family: 'Roboto', sans-serif
+
+.container
+                padding: 16px 0 0 24px
+                margin: 0 auto
+                max-width: 1290px
+
+.header__wrapper
+                display: $displayF
+                justify-content: space-between
+                align-items: center
+                
+.header__nav-list
+                display: $displayF
+                justify-content: space-around
+
+
+
+.header__nav-item 
+                padding: 0 14px 0 0
+                font-family: 'Share', cursive
+                font-size: 1.1rem
+                align-items: center
+                
+
+.header__logo
+                font-family: 'Fenix', serif
+
+.header__name-text
+                color: #9B9B9B
+
+.header-img
+                text-decoration: none
+                color: $color1
+                font-size: 22px
+                bottom: 0.7em
+                position: relative
+
+.header__nav-link
+                text-decoration: none
+                color: $color1
+                font-size: 22px
+                bottom: 0.7em
+                position: relative
+                padding: 4px
+
+.header__nav-link:hover
+                padding: 4px
+                background: #5AAA
+                border-radius: 5px
+
+.header__img-logo
+                width: 2.5em
+
+.header__name 
+                position: relative
+                top: -1.6em
+                left: 2.5rem
+                color: $color1
+                font-size: 25px
+                font-weight: bold
+                text-transform: uppercase
+                text-decoration: none 
+
+
+.section
+                background: #D8D8D8
+                
+
+.section__img 
+                max-width: 100%
+                width: 59%
+                height: auto
+                margin-bottom: 32px
+                
+.section__wrapper
+                display: $displayF
+                justify-content: space-between
+                padding-top: 32px
+               
+                
+.section__inner
+                margin: 100px 80px 0 0
+                
+
+.section__inner-item
+                font-size: 55px
+                margin-bottom: 30px
+                font-family: 'Share', sans-serif
+                color: $color1
+                font-weight: bold
+
+.section__inner-info
+                font-size: 30px
+                margin-bottom: 40px
+                color: $color1
+                font-weight: 500
+
+.section__inner-btn
+                padding: 8px 118px
+                border: none
+                outline: none
+                background: $color1
+                color: #FFF
+                cursor: pointer
+                text-decoration: none
+                text-align: center
+
+.section__inner-btn:hover
+                background: #5AAA
+                
+
+.info 
+                background: #F3F5F5
+                padding: 23px 0 0 0 
+        
+
+.info__img
+                max-width: 100%
+                width: 95%
+                height: auto
+
+
+.info__wrapper
+                display: $displayF
+
+.info__cards
+                border-left: 1px solid #E0E2E2
+                padding-left: 12px
+
+.info__card
+                display: $displayF
+                align-items: center
+                margin-bottom: 16px
+                border: 1px solid #5AAA
+                border-radius: 4px
+                
+.info__card:hover
+                box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2)            
+
+
+.info__card-img
+                width: 35%
+                height: auto
+                
+                
+.info__wrapper-title
+                font-size: 35px 
+                color: $color1
+                padding-top: 32px
+                font-weight: 600
+
+.info__wrapper-text 
+                color: #4B4B4B              
+                font-family: 'Dosis', sans-serif
+                line-height: 25px
+                font-size: 18px
+                max-width: 720px
+                padding-top: 24px
+                
+
+.info__wrapper-quote
+                font-size: 17px
+                padding: 32px 0
+                color: #4D4D4D
+                font-weight: 600   
+
+.info__card-title
+                max-width: 400px
+                font-size: 25px
+                color: $color1
+                font-weight: 600
+                padding-bottom: 12px
+
+.info__card-aside
+                padding-left: 30px 
+
+.info__card-text 
+                max-width: 400px
+                font-size: 18px
+                padding-bottom: 18px
+                color: $color1
+
+.info__card-image
+                display: none
+
+.info__card-link
+                color: #5193E1
+                text-decoration: none
+                cursor: pointer
+
+               
+
+.info-guess
+                background:  #D8D8D8
+
+.learn
+                background-color: #EAEBEC
+
+.learn__head
+                text-align: center
+                font-size: 40px
+                font-weight: 600
+                color: $color1
+                margin: 32px 0 45px 0
+
+.learn__course
+                @extend %learn-course
+
+.learn__course-box
+                @extend %learn-course
+                 
+.learn__course-list
+                list-style: none
+                background-color: #fff
+                margin: 0 32px 0 0
+                max-width: 360px
+                min-height: 300px
+                border: 1px solid #5193E1
+                border-radius: 5px
+
+.learn__course-list:hover
+                box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2)
+
+.learn__img
+                max-width: 100%
+                height: auto
+
+.learn-list
+        display: none
+
+.learn__course-list-item
+                font-size: 25px
+                font-weight: 600
+                margin: 16px 0 16px 0
+                color: $color1
+                padding: 0 0 0 16px
+
+.learn__course-list-text
+                font-size: 18px
+                color: $color2
+                margin: 15px 0 15px 0
+                padding: 0 0 0 16px
+
+.learn__course-list-info
+                font-size: 18px
+                color: $color2
+                padding: 0 0 24px 16px
+                margin-right: 20px
+
+.thesis
+                background-color: #F3F5F5
+
+.thesis__head
+                text-align: center
+                font-size: 40px
+                font-weight: 600
+                color: $color1
+                margin: 32px 0 45px 0
+
+
+.thesis__video
+                max-width: 100%
+                width: 100%
+                height: auto
+                padding: 0 24px 24px 0
+
+.thesis__info
+                display: $displayF
+                margin-bottom: 26px
+                align-items: center
+                border: 1px solid #5193E1
+                border-radius: 4px
+                width: 440px
+                word-wrap: break-word
+
+.thesis__info:hover
+                box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2)
+
+.thesis__block
+                display: $displayF
+                 
+.thesis__info-card
+                width: 60%
+
+.thesis__info-img
+                width: 45%
+                padding-right: 16px
+
+.thesis__info-name
+                font-size: 25px
+                color: $color1
+                padding-bottom: 17px
+                font-weight: 600
+
+.thesis__info-text
+                color: #767676
+
+.thesis-content
+                background-color: #D8D8D8
+
+.thesis__video-name
+                font-size: 35px
+                color: $color1
+                padding: 24px 0 24px 0
+                font-weight: 600
+
+.thesis__video-info
+                color: #4B4B4B
+                font-family: 'Dosis', sans-serif
+                line-height: 25px
+                font-size: 18px
+                max-width: 720px
+                padding-bottom: 60px
+
+.footer
+                background-color: #F3F5F5
+                border-top: 1px solid #E1E3E3
+                padding-top: 20px
+
+.footer__content
+                display: $displayF
+                justify-content: space-between
+                align-items: center
+                padding: 0 32px 40px 0
+
+.footer__info
+                 color: #767676
+
+.footer__list
+                display: $displayF
+                
+
+.footer__link-terms
+                text-decoration: none
+                color: #7B7B7B
+
+.footer__link-privacy
+                padding-left: 20px
+                text-decoration: none
+                color: #7B7B7B
+.mobile__nav
+                display: none
+
+
+
+        
+ 
+
+@import "media";

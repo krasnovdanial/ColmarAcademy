@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Document
+        link(rel="icon", href="images/ic-logo.ico", type="image/x-icon")
+        |
+        |
+        <link href="https://fonts.googleapis.com/css?family=Dosis:300,400,500,600" rel="stylesheet">
+        |
+        |
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        link(rel="stylesheet", href="css/style.min.css")
+    body
+        header.header
+            .container
+                .header__wrapper
+                    .header__logo 
+                        |
+                        a(href="#").header__img  
+                            |
+                            img(src="images/ic-logo.svg", alt="Logo of Colmar Academy").header__img-logo
+                            |
+                            |
+                        p.header__name COLMAR <span class="header__name-text">ACADEMY</span>
+
+                    nav.header__nav
+                        ul.header__nav-list
+                            li.header__nav-item
+                                a.header__nav-link(href="#") On campus
+                            li.header__nav-item
+                                a.header__nav-link(href="#")  Online
+                            li.header__nav-item
+                                a.header__nav-link(href="#") For Companies
+                            li.header__nav-item
+                                a.header__nav-link(href="#") Sign in
+                        .mobile__nav
+                            |
+                            |
+                            a(href="#").mobile__nav-link
+                                |
+                                |
+                                img.mobile__nav-img(src="images/ic-logo.svg", alt="Logo icon")
+                            a(href="#").mobile__nav-link
+                                |
+                                |
+                                img.mobile__nav-img(src="images/ic-on-campus.svg", alt="Icon of the campus")
+                            a(href="#").mobile__nav-link
+                                |
+                                |
+                                img.mobile__nav-img(src="images/ic-online.svg", alt="Online icon")
+                            a(href="#").mobile__nav-link
+                                |
+                                |
+                                img.mobile__nav-img(src="images/ic-login.svg", alt="Login icon")
+        |
+        |    
+        section.section
+            .container
+                .section__wrapper
+                    |
+                    img(src="images/banner.jpg", alt="Girls who read").section__img
+                    |
+                    .section__inner 
+                        p.section__inner-item Learn something <br> new everyday
+                        p.section__inner-info Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit.
+                        a(href="#").section__inner-btn Start here
+        section.info
+            .container
+                .info__wrapper
+                    <div class="info__wrapper-img">
+                        |
+                        |
+                        img(src="images/information-main.jpg", alt=" A guy who reads a book").info__img
+                        .info__quote 
+                            h2.info__wrapper-title It doesn't hurt to keep practicing
+                            p.info__wrapper-text "Curabitur vitue libera in ipsum porttitor consequat. Aliquam et commodo lectus, nec <br>consequat neque. Sed non accumsan urna. Phasellus sed conswquat ex. Etiam eget <br>magna laoreet, efficitur dolor consequat, trisique ligula."
+                            p.info__wrapper-quote Emanuel, Sr Strategist at Hiring.com
+                        |
+                        </div>
+                        .info__cards
+                            .info__card 
+                                img(src="images/information-orientation.png", alt="People walking on the sidewalk").info__card-img
+                                img(src="images/information-orientation-mobile.jpg", alt="People walking on the sidewalk").info__card-image
+                                |
+                                |
+                                <aside class="info__card-aside">
+                                h3.info__card-title Orientation date
+                                p.info__card-text Tue 10/11 & Wed 10/12: 8am-3pm
+                                |
+                                |
+                                a.info__card-link(href="#") Read more  <i class="fa fa-book"></i>
+                                </aside>
+                            .info__card
+                                img(src="images/information-campus.png", alt="Students in a geography class").info__card-img
+                                img(src="images/information-campus-mobile.jpg", alt="").info__card-image
+                                |
+                                |
+                                <aside class="info__card-aside">
+                                h3.info__card-title Our campus
+                                p.info__card-text Find which campus is close by you
+                                |
+                                |
+                                a.info__card-link(href="#") Read more  <i class="fa fa-book"></i>
+                                </aside>
+                            .info__card.info-guess
+                                img(src="images/guest-lecture.jpg", alt="A professor from the university").info__card-img
+                                img(src="images/information-guest-lecture-mobile.jpg", alt="").info__card-image
+                                |
+                                |
+                                <aside class="info__card-aside">
+                                h3.info__card-title Our guest lecture
+                                p.info__card-text Join a keynote with Oliver sack
+                                    |about music in medical treatment
+                                |
+                                |
+                                a.info__card-link(href="#") Read more <i class="fa fa-book"></i>
+                                </aside>
+                            
+        section.learn
+            .container
+                .learn__courses
+                    h2.learn__head Start learning
+                    |
+                    .learn__course
+                        |
+                        ul.learn-list
+                         li.learn__course-info Software engineering
+                         li.learn__course-info Computer art
+                         li.learn__course-info Design
+                         li.learn__course-info Data
+                         li.learn__course-info Business
+                         li.learn__course-info Marketing
+                        |
+                        |
+                        <div class="learn__course-list">
+                        |
+                        |
+                        img(src="images/course-software.jpg", alt="Computers on the table").learn__img
+                        p.learn__course-list-item  Software engineering
+                        p.learn__course-list-text COURSES <i class="fa fa-graduation-cap"></i>
+                        p.learn__course-list-info Web Delelopment, Mobile Development, iOT, APIs
+                        </div>
+                        |
+                        |
+                        <div class="learn__course-list">
+                        img(src="images/computer-art.jpg", alt="Computers on the table").learn__img
+                        |
+                        |
+                        p.learn__course-list-item Computer art
+                        p.learn__course-list-text COURSES <i class="fa fa-graduation-cap"></i>
+                        p.learn__course-list-info  Imaging & Design, Web Design, Motion Graphics & Visual Effects, Computer Animation
+                        </div>
+                        |
+                        |
+                        <div class="learn__course-list">
+                        img(src="images/course-design.jpg", alt="Computers on the table").learn__img
+                        |
+                        |
+                        p.learn__course-list-item  Design
+                        p.learn__course-list-text COURSES <i class="fa fa-graduation-cap"></i>
+                        p.learn__course-list-info  User Experience Design, User Research, Visual Design
+                        </div> 
+                        |
+                        |
+                    .learn__course-box
+                        |
+                        |
+                        <div class="learn__course-list">
+                        img(src="images/course-data.jpg", alt="Computers on the table").learn__img
+                        |
+                        |
+                        p.learn__course-list-item  Data
+                        p.learn__course-list-text  COURSES <i class="fa fa-graduation-cap"></i>
+                        p.learn__course-list-info  Data Science, Big Data, SQL, Data Visualization
+                        </div>
+                        |
+                        |
+                        <div class="learn__course-list">
+                        img(src="images/course-business.jpg", alt="Computers on the table").learn__img
+                        |
+                        |
+                        p.learn__course-list-item  Business
+                        p.learn__course-list-text  COURSES <i class="fa fa-graduation-cap"></i>
+                        p.learn__course-list-info  Product Development, Business Development, Startup
+                        </div>
+                        |
+                        |
+                        <div class="learn__course-list">
+                        img(src="images/course-marketing.jpg", alt="Computers on the table").learn__img
+                        |
+                        |
+                        p.learn__course-list-item  Marketing
+                        p.learn__course-list-text  COURSES <i class="fa fa-graduation-cap"></i>
+                        p.learn__course-list-info  Analytics, Content Marketing Mobile Marketing
+                        </div>
+        section.thesis
+            .container
+                .thesis__head Thesis exhibit
+                .thesis__block
+                    .thesis__multimedia
+                        video(src="videos/thesis.mp4" autoplay muted loop).thesis__video
+                        h2.thesis__video-name Reimagine urban
+                        p.thesis__video-info "Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequal neque. Sed non accumsan urna. Phasellus sed sonsequat ex. Etiam eget magna laoreet, efficitur dolor consequat, trisique ligula."
+                    <div class="thesis__informations">
+                    .thesis__info.thesis-content
+                        img(src="images/thesis-fisma.jpg", alt="The man is engaged in the design").thesis__info-img
+                        .thesis__info-item
+                            p.thesis__info-name Fisma: Design and Prototype
+                            p.thesis__info-text Designer showcase of new prototype product
+                    .thesis__info
+                        img(src="images/thesis-now-and-then.jpg", alt="New-York view").thesis__info-img
+                        .thesis__info-item
+                            p.thesis__info-name Now and then
+                            p.thesis__info-text Research study about New York
+                            |
+                            |
+                    </div>
+        footer.footer
+            .container
+                .footer__content
+                    .footer__info
+                        p &copy; Colmar Academy. All rights reserved
+                    .footer__docs
+                        ul.footer__list
+                            li.footer__list-item
+                                a.footer__link-terms(href="#") Terms
+                            li.footer__list-item
+                                a.footer__link-privacy(href="#")  Privacy
+
+
+
+
+
